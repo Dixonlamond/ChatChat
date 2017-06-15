@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		889854221EF2F03A00692FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889854211EF2F03A00692FAF /* AppDelegate.swift */; };
+		889854241EF2F03A00692FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889854231EF2F03A00692FAF /* ViewController.swift */; };
+		889854271EF2F03A00692FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889854251EF2F03A00692FAF /* Main.storyboard */; };
+		889854291EF2F03A00692FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 889854281EF2F03A00692FAF /* Assets.xcassets */; };
+		8898542C1EF2F03A00692FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8898542A1EF2F03A00692FAF /* LaunchScreen.storyboard */; };
+		8898543A1EF2F08700692FAF /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889854391EF2F08700692FAF /* IntentHandler.swift */; };
+		889854431EF2F08700692FAF /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889854421EF2F08700692FAF /* IntentsUI.framework */; };
+		889854461EF2F08700692FAF /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889854451EF2F08700692FAF /* IntentViewController.swift */; };
+		889854491EF2F08700692FAF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 889854471EF2F08700692FAF /* MainInterface.storyboard */; };
+		8898544D1EF2F08800692FAF /* ChatChatSiriIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 889854401EF2F08700692FAF /* ChatChatSiriIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		889854501EF2F08800692FAF /* ChatChatSiriIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 889854371EF2F08700692FAF /* ChatChatSiriIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8898544B1EF2F08800692FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889854161EF2F03A00692FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8898543F1EF2F08700692FAF;
+			remoteInfo = ChatChatSiriIntentUI;
+		};
+		8898544E1EF2F08800692FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 889854161EF2F03A00692FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 889854361EF2F08700692FAF;
+			remoteInfo = ChatChatSiriIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		889854571EF2F08800692FAF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8898544D1EF2F08800692FAF /* ChatChatSiriIntentUI.appex in Embed App Extensions */,
+				889854501EF2F08800692FAF /* ChatChatSiriIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8898541E1EF2F03A00692FAF /* ChatChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		889854211EF2F03A00692FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		889854231EF2F03A00692FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		889854261EF2F03A00692FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		889854281EF2F03A00692FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8898542B1EF2F03A00692FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8898542D1EF2F03A00692FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		889854371EF2F08700692FAF /* ChatChatSiriIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChatChatSiriIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		889854391EF2F08700692FAF /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		8898543B1EF2F08700692FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		889854401EF2F08700692FAF /* ChatChatSiriIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChatChatSiriIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		889854421EF2F08700692FAF /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		889854451EF2F08700692FAF /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		889854481EF2F08700692FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		8898544A1EF2F08800692FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8898541B1EF2F03A00692FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889854341EF2F08700692FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8898543D1EF2F08700692FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889854431EF2F08700692FAF /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		889854151EF2F03A00692FAF = {
+			isa = PBXGroup;
+			children = (
+				889854201EF2F03A00692FAF /* ChatChat */,
+				889854381EF2F08700692FAF /* ChatChatSiriIntent */,
+				889854441EF2F08700692FAF /* ChatChatSiriIntentUI */,
+				889854411EF2F08700692FAF /* Frameworks */,
+				8898541F1EF2F03A00692FAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8898541F1EF2F03A00692FAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8898541E1EF2F03A00692FAF /* ChatChat.app */,
+				889854371EF2F08700692FAF /* ChatChatSiriIntent.appex */,
+				889854401EF2F08700692FAF /* ChatChatSiriIntentUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		889854201EF2F03A00692FAF /* ChatChat */ = {
+			isa = PBXGroup;
+			children = (
+				889854211EF2F03A00692FAF /* AppDelegate.swift */,
+				889854231EF2F03A00692FAF /* ViewController.swift */,
+				889854251EF2F03A00692FAF /* Main.storyboard */,
+				889854281EF2F03A00692FAF /* Assets.xcassets */,
+				8898542A1EF2F03A00692FAF /* LaunchScreen.storyboard */,
+				8898542D1EF2F03A00692FAF /* Info.plist */,
+			);
+			path = ChatChat;
+			sourceTree = "<group>";
+		};
+		889854381EF2F08700692FAF /* ChatChatSiriIntent */ = {
+			isa = PBXGroup;
+			children = (
+				889854391EF2F08700692FAF /* IntentHandler.swift */,
+				8898543B1EF2F08700692FAF /* Info.plist */,
+			);
+			path = ChatChatSiriIntent;
+			sourceTree = "<group>";
+		};
+		889854411EF2F08700692FAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				889854421EF2F08700692FAF /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		889854441EF2F08700692FAF /* ChatChatSiriIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				889854451EF2F08700692FAF /* IntentViewController.swift */,
+				889854471EF2F08700692FAF /* MainInterface.storyboard */,
+				8898544A1EF2F08800692FAF /* Info.plist */,
+			);
+			path = ChatChatSiriIntentUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8898541D1EF2F03A00692FAF /* ChatChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889854301EF2F03A00692FAF /* Build configuration list for PBXNativeTarget "ChatChat" */;
+			buildPhases = (
+				8898541A1EF2F03A00692FAF /* Sources */,
+				8898541B1EF2F03A00692FAF /* Frameworks */,
+				8898541C1EF2F03A00692FAF /* Resources */,
+				889854571EF2F08800692FAF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8898544C1EF2F08800692FAF /* PBXTargetDependency */,
+				8898544F1EF2F08800692FAF /* PBXTargetDependency */,
+			);
+			name = ChatChat;
+			productName = ChatChat;
+			productReference = 8898541E1EF2F03A00692FAF /* ChatChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		889854361EF2F08700692FAF /* ChatChatSiriIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889854541EF2F08800692FAF /* Build configuration list for PBXNativeTarget "ChatChatSiriIntent" */;
+			buildPhases = (
+				889854331EF2F08700692FAF /* Sources */,
+				889854341EF2F08700692FAF /* Frameworks */,
+				889854351EF2F08700692FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatChatSiriIntent;
+			productName = ChatChatSiriIntent;
+			productReference = 889854371EF2F08700692FAF /* ChatChatSiriIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8898543F1EF2F08700692FAF /* ChatChatSiriIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889854511EF2F08800692FAF /* Build configuration list for PBXNativeTarget "ChatChatSiriIntentUI" */;
+			buildPhases = (
+				8898543C1EF2F08700692FAF /* Sources */,
+				8898543D1EF2F08700692FAF /* Frameworks */,
+				8898543E1EF2F08700692FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatChatSiriIntentUI;
+			productName = ChatChatSiriIntentUI;
+			productReference = 889854401EF2F08700692FAF /* ChatChatSiriIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		889854161EF2F03A00692FAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Lamond Dixon";
+				TargetAttributes = {
+					8898541D1EF2F03A00692FAF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					889854361EF2F08700692FAF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					8898543F1EF2F08700692FAF = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 889854191EF2F03A00692FAF /* Build configuration list for PBXProject "ChatChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 889854151EF2F03A00692FAF;
+			productRefGroup = 8898541F1EF2F03A00692FAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8898541D1EF2F03A00692FAF /* ChatChat */,
+				889854361EF2F08700692FAF /* ChatChatSiriIntent */,
+				8898543F1EF2F08700692FAF /* ChatChatSiriIntentUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8898541C1EF2F03A00692FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8898542C1EF2F03A00692FAF /* LaunchScreen.storyboard in Resources */,
+				889854291EF2F03A00692FAF /* Assets.xcassets in Resources */,
+				889854271EF2F03A00692FAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889854351EF2F08700692FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8898543E1EF2F08700692FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889854491EF2F08700692FAF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8898541A1EF2F03A00692FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889854241EF2F03A00692FAF /* ViewController.swift in Sources */,
+				889854221EF2F03A00692FAF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889854331EF2F08700692FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8898543A1EF2F08700692FAF /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8898543C1EF2F08700692FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889854461EF2F08700692FAF /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8898544C1EF2F08800692FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8898543F1EF2F08700692FAF /* ChatChatSiriIntentUI */;
+			targetProxy = 8898544B1EF2F08800692FAF /* PBXContainerItemProxy */;
+		};
+		8898544F1EF2F08800692FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 889854361EF2F08700692FAF /* ChatChatSiriIntent */;
+			targetProxy = 8898544E1EF2F08800692FAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		889854251EF2F03A00692FAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				889854261EF2F03A00692FAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8898542A1EF2F03A00692FAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8898542B1EF2F03A00692FAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		889854471EF2F08700692FAF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				889854481EF2F08700692FAF /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8898542E1EF2F03A00692FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8898542F1EF2F03A00692FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		889854311EF2F03A00692FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChatChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dixonlamond.ChatChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		889854321EF2F03A00692FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChatChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dixonlamond.ChatChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		889854521EF2F08800692FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ChatChatSiriIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dixonlamond.ChatChat.ChatChatSiriIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		889854531EF2F08800692FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ChatChatSiriIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dixonlamond.ChatChat.ChatChatSiriIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		889854551EF2F08800692FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ChatChatSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dixonlamond.ChatChat.ChatChatSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		889854561EF2F08800692FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ChatChatSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dixonlamond.ChatChat.ChatChatSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		889854191EF2F03A00692FAF /* Build configuration list for PBXProject "ChatChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8898542E1EF2F03A00692FAF /* Debug */,
+				8898542F1EF2F03A00692FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		889854301EF2F03A00692FAF /* Build configuration list for PBXNativeTarget "ChatChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889854311EF2F03A00692FAF /* Debug */,
+				889854321EF2F03A00692FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		889854511EF2F08800692FAF /* Build configuration list for PBXNativeTarget "ChatChatSiriIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889854521EF2F08800692FAF /* Debug */,
+				889854531EF2F08800692FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		889854541EF2F08800692FAF /* Build configuration list for PBXNativeTarget "ChatChatSiriIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889854551EF2F08800692FAF /* Debug */,
+				889854561EF2F08800692FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 889854161EF2F03A00692FAF /* Project object */;
+}
